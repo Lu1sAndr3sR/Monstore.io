@@ -1,24 +1,38 @@
+<header class="navbar">
+  <div class="logo-buttons-container">
+    <div class="logo">
+      <h1>MONSTORE</h1>
+    </div>
+    <div class="nav-buttons">
+      <a routerLink="/wish" class="btn">
+        <img src="/assets/wishb.png" alt="Wish">
+      </a>
+      <a routerLink="/cart" class="btn">
+        <img src="/assets/cartb.png" alt="Cart">
+      </a>
+      <a routerLink="/profile" class="btn">
+        <img src="/assets/user.webp" alt="Profile">
+      </a>
+    </div>
+  </div>
+  <div class="search-bar">
+    <input type="text" [(ngModel)]="searchText" />
+<button (click)="searchProducts()">SEARCH</button>
+  </div>
+</header>
+
 <body>
-  <header class="navbar">
-    <div class="logo-buttons-container">
-      <div class="logo">
-        <h1>MONSTORE</h1>
-      </div>
-      <div class="nav-buttons">
-        <a routerLink="/wish" class="btn">
-          <img src="/assets/wishb.png" alt="Wish">
-        </a>
-        <a routerLink="/cart" class="btn">
-          <img src="/assets/cartb.png" alt="Cart">
-        </a>
-        <a routerLink="/profile" class="btn">
-          <img src="/assets/user.webp" alt="Profile">
-        </a>
-      </div>
+<main>
+  <div class="products-container">
+    <div *ngFor="let product of products" class="product-card">
+      <img [src]="product.image" alt="{{ product.name }}" class="product-image" />
+      <h3>{{ product.name }}</h3>
+      <p class="product-category">Category: {{ product.category }}</p>
+      <p class="product-color">Color: {{ product.color }}</p>
+      <p class="product-price">{{ product.price | currency }}</p>
+      <button (click)="addToCart(product)">Add to Cart</button>
+      <button (click)="addToWishList(product)">Add to Wish List</button>
     </div>
-    <div class="search-bar">
-      <input type="text">
-      <button type="button">SEARCH</button>
-    </div>
-  </header>
+  </div>
+</main>
 </body>

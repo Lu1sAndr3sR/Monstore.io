@@ -90,16 +90,71 @@ body {
     height: 20px; /* Ajusta la altura según tu imagen */
   }
 
-  /* Estilo para el subtítulo */
+/* Estilo para el subtítulo */
 .subtitle {
     text-align: center;
     margin-top: 20px; /* Espacio entre la navbar y el subtítulo */
-  }
+}
   
-  .subtitle h2 {
+.subtitle h2 {
     font-size: 1.5rem;
     color: #333;
     font-weight: 500;
     font-weight: bold;
-  }
-  
+}
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.product-category,
+.product-color,
+.product-price {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Estilo para el botón de eliminar producto */
+button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+button:focus {
+    outline: none;
+}
