@@ -90,6 +90,7 @@ body {
     height: 20px; /* Ajusta la altura según tu imagen */
   }
 
+
 /* Estilo para el subtítulo */
 .subtitle {
     text-align: center;
@@ -97,10 +98,19 @@ body {
 }
   
 .subtitle h2 {
+
+  /* Estilo para el subtítulo */
+.subtitle {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre la navbar y el subtítulo */
+  }
+  
+  .subtitle h2 {
     font-size: 1.5rem;
     color: #333;
     font-weight: 500;
     font-weight: bold;
+
 }
 
 /* Estilos para las tarjetas de productos */
@@ -158,3 +168,6 @@ button:hover {
 button:focus {
     outline: none;
 }
+  }
+  
+

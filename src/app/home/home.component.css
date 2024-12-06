@@ -88,6 +88,7 @@ body {
 .btn img {
     width: 20px; /* Ajusta el ancho según tu imagen */
     height: 20px; /* Ajusta la altura según tu imagen */
+
   }
 
   /* Contenedor de productos */
@@ -136,3 +137,6 @@ button {
 button:hover {
     background-color: #000000;
 }
+
+  
+

@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+
 import { CartService } from '../services/cart.service';
 import { CommonModule } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-cart',
   standalone: true,
+
   imports: [CommonModule], // Importa CommonModule para el pipe currency
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css'],
@@ -22,4 +26,12 @@ export class CartComponent {
     this.cartService.removeFromCart(index); // Eliminar del carrito
     this.cartItems = this.cartService.getCartItems(); // Actualizar la lista
   }
+
+  imports: [],
+  templateUrl: './cart.component.html',
+  styleUrl: './cart.component.css'
+})
+export class CartComponent {
+
+>>>>>>> 0569177 (Initial commit)
 }
