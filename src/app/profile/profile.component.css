@@ -1,0 +1,203 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url('/assets/homew.png'); 
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url('/assets/pergamino.png');
+    color: rgb(0, 0, 0);
+}
+
+.logo-buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-buttons .btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.nav-buttons .btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-buttons .btn:hover {
+    transform: scale(1.1);
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 6px; /* Reducido el padding */
+    width: 250px; /* Puedes ajustarlo para hacerlo más pequeño */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 0.9rem; /* Reducido el tamaño de fuente */
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #3e372c;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #3e372c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #000000;
+}
+
+/* Estilo de perfil */
+.profile-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 20px;
+}
+
+.profile-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+.edit-button:hover {
+    background-color: #ffffff;
+}
+
+/* Formulario de perfil */
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px; /* Reducido el padding */
+    font-size: 0.9rem; /* Reducido el tamaño de fuente */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #3e372c;
+}
+
+.save-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 12%;
+    border-radius: 40px;
+    font-weight: bold;
+    margin-left: 265px;
+}
+
+.save-button:hover {
+    background-color: transparent;
+}
+
+/* Estilos de los botones de editar */
+.edit-input-btn {
+    background-color: transparent;
+    border: none;
+    color: #3e372c;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 10%;
+    margin-left: 270px;
+}
+
+.edit-input-btn:hover {
+    color: #ffffff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .search-bar input[type="text"] {
+        width: 250px;
+    }
+
+    .profile-container {
+        padding: 20px;
+        margin: 20px;
+    }
+}

@@ -62,20 +62,25 @@
     gap: 15px;
   }
   
-  .nav-buttons .btn {
-    padding: 10px 20px;
-    background-color: #3e372c;
-    color: #d2cbb1;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-buttons .btn:hover {
-    background-color: #284b68;
-  }
+  /* General styles for buttons and links */
+.nav-buttons .btn {
+  display: inline-block; /* Para que los enlaces tengan comportamiento de bloque */
+  padding: 10px 20px;
+  background-color: #3e372c;
+  color: #d2cbb1;
+  text-decoration: none; /* Remueve el subrayado de los enlaces */
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons .btn:hover {
+  background-color: #284b68;
+}
+
   
   /* Hero Section with Background Image */
   .hero {

@@ -1,0 +1,37 @@
+<!-- Botón de retroceso (Back) -->
+<button class="back-button" onclick="window.history.back();"></button>
+
+
+<head>
+    <link rel="stylesheet" href="sign-up.component.css">
+    <!-- Asegúrate de incluir Font Awesome en tu HTML si no lo has hecho -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="user-icon-container">
+            <i class="fas fa-user"></i>
+        </div>
+        <form>
+
+            <label for="email">EMAIL</label>
+            <input id="email" type="email" required>
+
+            <label for="user">USER</label>
+            <input id="user" type="text">
+
+            <label for="password">PASSWORD</label>
+            <input id="password" type="password">
+
+            <label for="cpassword">CONFIRM PASSWORD</label>
+            <input id="cpassword" type="password">
+            
+
+                <!-- Cambio el <a> por un <button> -->
+                    <a routerLink="/log-in" class="btn">SAVE</a>
+
+
+
+        </form>
+    </div>
+</body>

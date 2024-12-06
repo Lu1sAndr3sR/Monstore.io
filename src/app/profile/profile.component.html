@@ -1,0 +1,76 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="profile.component.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-buttons-container">
+      <div class="logo">
+        <h1>MONSTORE</h1>
+      </div>
+      <div class="nav-buttons">
+        <a routerLink="/wish" class="btn">
+          <img src="/assets/wishb.png" alt="Wish">
+        </a>
+        <a routerLink="/cart" class="btn">
+          <img src="/assets/cartb.png" alt="Cart">
+        </a>
+      </div>
+    </div>
+    <div class="search-bar">
+      <input type="text">
+      <button type="button">SEARCH</button>
+    </div>
+  </header>
+
+  <!-- Aquí comienza el perfil del usuario -->
+  <div class="profile-container">
+    <div class="profile-header">
+      <!-- Icono de usuario -->
+      <img class="profile-icon" src="/assets/user.webp" alt="User Icon">
+      <button class="edit-button">✏️</button>
+    </div>
+
+    <div class="profile-details">
+      <div class="form-group">
+        <label for="username">USER</label>
+        <input type="text" id="username" name="username" placeholder="user1Example" readonly>
+        <button class="edit-input-btn">✏️</button>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-MAIL</label>
+        <input type="email" id="email" name="email" placeholder="example1@gmail.com" readonly>
+        <button class="edit-input-btn">✏️</button>
+      </div>
+
+      <div class="form-group">
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" name="password" placeholder="..........." readonly>
+        <button class="edit-input-btn">✏️</button>
+      </div>
+
+      <div class="form-group">
+        <label for="address">ADDRESS</label>
+        <input type="text" id="address" name="address" placeholder="City, Av, Street..." readonly>
+        <button class="edit-input-btn">✏️</button>
+      </div>
+
+      <button class="save-button">SAVE</button>
+    </div>
+  </div>
+
+  <script>
+    // Permite editar los inputs al hacer click en el lápiz
+    document.querySelectorAll('.edit-input-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const input = this.previousElementSibling;
+            input.removeAttribute('readonly'); // Permite la edición
+            input.focus();
+        });
+    });
+  </script>
+</body>
+

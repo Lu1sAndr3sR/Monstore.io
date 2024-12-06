@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/assets/Loggg.webp'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.6); /* Blanco con 60% de opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: 450px;  /* Ajusta la altura */
+    width: 350px;   /* Ajusta el ancho */
+    overflow: hidden;  /* Evita que los elementos sobresalgan */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centra los elementos horizontalmente */
+    justify-content: center; /* Alinea verticalmente los elementos */
+}
+
+.user-icon-container {
+    background-color: white;    /* Fondo blanco */
+    border-radius: 50%;         /* Bordes redondeados, forma circular */
+    padding: 15px;              /* Espaciado dentro del círculo */
+    margin-bottom: 15px;        /* Espacio entre el ícono y los inputs */
+    display: flex;
+    justify-content: center;    /* Centra el ícono dentro del círculo */
+    align-items: center;        /* Centra el ícono dentro del círculo */
+    width: 60px;                /* Ancho del círculo */
+    height: 60px;               /* Alto del círculo */
+}
+
+.user-icon-container i {
+    font-size: 24px;            /* Tamaño del ícono */
+    color: #333;                /* Color del ícono */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;         /* Espacio entre el label y el input */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    width: 90%;
+}
+
+input {
+    width: 90%;                 /* Los inputs ocuparán el 90% del ancho disponible */
+    padding: 10px;
+    margin: 5px 0;              /* Margen entre los inputs */
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: none;
+}
+
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;  /* Aumenta el tamaño de la fuente para que sea más legible */
+    width: 23%;       /* Establece el ancho a un 80% del contenedor */
+    margin-top: 20px; /* Espacio superior entre el botón y el input */
+    margin-left: 132px; /* Centra el botón horizontalmente */
+    margin-right: auto; /* Centra el botón horizontalmente */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el enlace Regístrate */
+a {
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;  /* Coincide con el tamaño de la fuente del botón */
+    width: 18%;       /* Igual que el botón LOG IN */
+    text-align: center;
+    margin-top: 10px; /* Espacio superior entre el enlace y el botón */
+    margin-left: 120px; /* Centra el enlace horizontalmente */
+    margin-right: auto; /* Centra el enlace horizontalmente */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+a:hover {
+    background-color: #45a049; /* Mismo efecto hover que el botón */
+}
+
+p {
+    text-align: center;  /* Centra el texto y el enlace dentro del párrafo */
+    width: 100%;         /* Asegura que el párrafo ocupe todo el ancho disponible */
+    margin-top: 20px;    /* Espacio superior entre el párrafo y el botón o inputs */
+}
+
+/* Estilo para el botón de retroceso */
+/* Estilo para el botón de retroceso */
+.back-button {
+    position: absolute;
+    top: 20px;        /* Ajusta la distancia desde la parte superior */
+    left: 20px;       /* Ajusta la distancia desde la parte izquierda */
+    width: 40px;      /* Ajusta el tamaño del botón */
+    height: 40px;     /* Ajusta el tamaño del botón */
+    background-color: transparent; /* Fondo blanco por defecto */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url('/assets/backb.png'); /* Sin imagen por defecto */
+}
+
+.back-button:hover {
+    background-image: url('/assets/backb.png'); /* Ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra el botón */
+    background-position: center; /* Centra la imagen */
+    background-color: rgba(0, 0, 0, 0.1); /* Ligero cambio de color en el hover */
+}
+
+/* Estilo para el botón de log-in */
+.log-in-btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;  /* Coincide con el tamaño de la fuente del botón */
+    width: 18%;       /* Asegura que el botón ocupe el 80% del ancho del contenedor */
+    text-align: center;
+    margin-top: 10px;  /* Espacio superior entre el enlace y el input */
+    margin-left: 122px; /* Centra el botón horizontalmente */
+    margin-right: auto; /* Centra el botón horizontalmente */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.log-in-btn:hover {
+    background-color: #45a049;
+}
