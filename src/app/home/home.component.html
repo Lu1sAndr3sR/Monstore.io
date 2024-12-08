@@ -4,15 +4,15 @@
       <h1>MONSTORE</h1>
     </div>
     <div class="nav-buttons">
-      <a routerLink="/wish" class="btn">
+      <button (click)="goToWishList()" class="btn">
         <img src="/assets/wishb.png" alt="Wish">
-      </a>
-      <a routerLink="/cart" class="btn">
+      </button>
+      <button (click)="goToCart()" class="btn">
         <img src="/assets/cartb.png" alt="Cart">
-      </a>
-      <a routerLink="/profile" class="btn">
+      </button>
+      <button (click)="goToProfile()" class="btn">
         <img src="/assets/user.webp" alt="Profile">
-      </a>
+      </button>
     </div>
   </div>
   <div class="search-bar">
@@ -21,8 +21,7 @@
   </div>
 </header>
 
-<body>
-<main>
+
   <div class="products-container">
     <div *ngFor="let product of products" class="product-card">
       <img [src]="product.image" alt="{{ product.name }}" class="product-image" />
@@ -34,30 +33,4 @@
       <button (click)="addToWishList(product)">Add to Wish List</button>
     </div>
   </div>
-</main>
-</body>
-<body>
-  <header class="navbar">
-    <div class="logo-buttons-container">
-      <div class="logo">
-        <h1>MONSTORE</h1>
-      </div>
-      <div class="nav-buttons">
-        <a routerLink="/wish" class="btn">
-          <img src="/assets/wishb.png" alt="Wish">
-        </a>
-        <a routerLink="/cart" class="btn">
-          <img src="/assets/cartb.png" alt="Cart">
-        </a>
-        <a routerLink="/profile" class="btn">
-          <img src="/assets/user.webp" alt="Profile">
-        </a>
-      </div>
-    </div>
-    <div class="search-bar">
-      <input type="text">
-      <button type="button">SEARCH</button>
-    </div>
-  </header>
-</body>
 

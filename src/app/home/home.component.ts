@@ -184,4 +184,16 @@ export class HomeComponent {
     console.log('Buscar:', this.searchText);
     // Aquí puedes filtrar productos o redirigir a otro componente.
   }
+
+  goToWishList() {
+    this.router.navigate(['wish']);
+  }
+
+  goToCart() {
+    this.router.navigate(['cart']);
+  }
+
+  goToProfile() {
+    this.router.navigate(['profile']);
+  }
 }

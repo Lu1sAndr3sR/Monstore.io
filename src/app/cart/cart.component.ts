@@ -2,21 +2,18 @@ import { Component } from '@angular/core';
 
 import { CartService } from '../services/cart.service';
 import { CommonModule } from '@angular/common';
-
-
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-cart',
   standalone: true,
-
-  imports: [CommonModule], // Importa CommonModule para el pipe currency
+  imports: [CommonModule], 
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
   cartItems: any[] = [];
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, private router: Router) {}
 
   ngOnInit() {
     this.cartItems = this.cartService.getCartItems(); // Obtener productos del carrito
@@ -27,11 +24,15 @@ export class CartComponent {
     this.cartItems = this.cartService.getCartItems(); // Actualizar la lista
   }
 
-  imports: [],
-  templateUrl: './cart.component.html',
-  styleUrl: './cart.component.css'
-})
-export class CartComponent {
+  goToWishList() {
+    this.router.navigate(['wish']);
+  }
 
->>>>>>> 0569177 (Initial commit)
+  goToCart() {
+    this.router.navigate(['cart']);
+  }
+
+  goToProfile() {
+    this.router.navigate(['profile']);
+  }
 }

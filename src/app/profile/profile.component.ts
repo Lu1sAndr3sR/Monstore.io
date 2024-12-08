@@ -11,4 +11,16 @@ import { Router } from '@angular/router';
 export class ProfileComponent {
 
   constructor(private router: Router) {}
+  
+  goToWishList() {
+    this.router.navigate(['wish']);
+  }
+
+  goToCart() {
+    this.router.navigate(['cart']);
+  }
+
+  goToProfile() {
+    this.router.navigate(['profile']);
+  }
 }
